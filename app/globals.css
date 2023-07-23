@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.list.selected {
+  background-color: rgb(199, 210, 254);
+  color: rgb(55, 48, 163);
+}
+
+
+ul.listHoverEffect li.list{
+    cursor: pointer;
+}
+ul.listHoverEffect li.list *{
+transition: 0.25s;
+}
+ul.listHoverEffect li.list:hover span.text{
+    transform: translateX(10px);
+}
+.saleQ .apexcharts-radialbar-slice-0{
+    stroke: #ffbe0b;
+}
+.siteVQ .apexcharts-radialbar-slice-0{
+    stroke: #ff006e;
+}
+.searchQ .apexcharts-radialbar-slice-0{
+    stroke: #8338ec;
+    
+}
+
+
+
+.dark .apexcharts-text{
+  fill: #f3f4f6;
+}
+
+.apexcharts-radialbar-slice-0{
+    
+    stroke-linecap: round;
+    stroke-opacity: 1;
+    pointer-events: none;
+}
+
+ul.childs li.child:nth-child(n+4){
+  display: none;
+  
+}
+ul.childs.opened li.child:nth-child(n+4){
+  display: unset;
+}
+
+.leftsidebar{
+  transition: 0.5s;
+}
+
+.leftsidebar.closeMenu{
+  left: 000%;
+}
+@media only screen and (max-width: 768px) {
+
+  .leftsidebar.closeMenu {
+    left: -100%;
+  }
+}
+
+.usercart .image{
+  object-fit: cover;
+}
